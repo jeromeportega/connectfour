@@ -194,12 +194,12 @@ function winCheck() {
 // Declares a winner by who laid down the winning token.  Let's the user know who won and allows them to restart the game.
 function declareWinner() {
   if (turn == 1) {
-    gameBoard.innerHTML += "<div class='animated fadeIn'><h1>You Win!</h1><h4>Click the Button to Restart the Game!</h4><br><button id='restart' class='blueBack red'>Restart</button></div>";
+    gameBoard.innerHTML += "<div class='animated fadeIn'><h1>You Win!</h1><button id='restart' class='blueBack red'>Restart</button></div>";
     document.getElementById('restart').addEventListener('click', function() {
       location.reload();
     });
   } else {
-    gameBoard.innerHTML += "<div class='animated fadeIn'><h1>The Computer Wins!</h1><h4>Click the Button to Restart the Game!</h4><br><button id='restart' class='blueBack red'>Restart</button></div>";
+    gameBoard.innerHTML += "<div class='animated fadeIn'><h1>The Computer Wins!</h1><button id='restart' class='blueBack red'>Restart</button></div>";
     document.getElementById('restart').addEventListener('click', function() {
       location.reload();
     });
@@ -211,7 +211,7 @@ function tieCheck() {
   for (var i = 0; i < gameBoardArray[0].length; i++) {
     if (gameBoardArray[0][i] === 0) return;
   }
-  gameBoard.innerHTML += "<div class='animated fadeIn'><h1>Its a draw!</h1><h4>Click the Button to Restart the Game!</h4><button id='restart' class='blueBack red'>Restart</button></div>";
+  gameBoard.innerHTML += "<div class='animated fadeIn'><h1>Its a draw!</h1><button id='restart' class='blueBack red'>Restart</button></div>";
   document.getElementById('restart').addEventListener('click', function() {
     location.reload();
   });
