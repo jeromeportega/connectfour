@@ -24,6 +24,9 @@
   height: 100px;
   width: 200px;
   font-size: 40px;
+  border: solid 3px black;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 #gameboard {
@@ -31,6 +34,7 @@
   height: auto;
   display: inline-block;
   text-align: center;
+  border: solid 1px black;
 }
 
 .gameColumn {
@@ -39,6 +43,11 @@
   height: 302px;
   border: solid 1px black;
   transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.gameColumn:hover {
+  background-color: #e5e5e5;
 }
 
 .gameSquare {
@@ -48,6 +57,7 @@
   bottom: 0;
   pointer-events: none;
   border-radius: 50px;
+  border: solid .5px black;
 }
 
 .animated {
