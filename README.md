@@ -1,4 +1,7 @@
 # Connect Four Clone - Created By: Jerome Ortega
+
+[Play It Here](http://connect-four-jerry.surge.sh/)
+
 ### Initial Thoughts
 
 Thinking of game logic, I know there are certain objectives that must be achieved:

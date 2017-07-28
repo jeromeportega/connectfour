@@ -199,7 +199,7 @@ function declareWinner() {
       location.reload();
     });
   } else {
-    gameBoard.innerHTML += "<div class='animiated fadeIn'><h1>The Computer Wins!</h1><h4>Click the Button to Restart the Game!</h4><br><button id='restart' class='blueBack red'>Restart</button></div>";
+    gameBoard.innerHTML += "<div class='animated fadeIn'><h1>The Computer Wins!</h1><h4>Click the Button to Restart the Game!</h4><br><button id='restart' class='blueBack red'>Restart</button></div>";
     document.getElementById('restart').addEventListener('click', function() {
       location.reload();
     });
@@ -211,7 +211,7 @@ function tieCheck() {
   for (var i = 0; i < gameBoardArray[0].length; i++) {
     if (gameBoardArray[0][i] === 0) return;
   }
-  gameBoard.innerHTML += "<div class='animted fadeIn'><h1>Its a draw!</h1><h4>Click the Button to Restart the Game!</h4><button id='restart' class='blueBack red'>Restart</button></div>";
+  gameBoard.innerHTML += "<div class='animated fadeIn'><h1>Its a draw!</h1><h4>Click the Button to Restart the Game!</h4><button id='restart' class='blueBack red'>Restart</button></div>";
   document.getElementById('restart').addEventListener('click', function() {
     location.reload();
   });
