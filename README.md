@@ -1,4 +1,4 @@
-# Connect Four Clone - Created By: Jerome Ortega
+# Connect Four Clone - Created By: Jerome Ortega - HTML, CSS, JavaScript (No Frameworks)
 
 [Play It Here](http://connect-four-jerry.surge.sh/)
 
