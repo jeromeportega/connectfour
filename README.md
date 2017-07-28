@@ -35,3 +35,8 @@ Thinking of game logic, I know there are certain objectives that must be achieve
 5. The biggest challenge in styling the game was getting the pieces to fill from the bottom first, and keep the correct pattern.  I finally found the solution myself after searching for a ton of answers that did not work for me.  All I did was invert the columns.  Since the columns are one-dimensional, they still kept the correct number associated to them.
 6. I wanted to do a bit more with the colors than red and blue, because those primary colors really hurt your eyes when they are right next to each other.
 7. I decided to write a short animation to fade in the restart button and who won for a tiny bit of theatrics.
+
+#### Features I'd Like to Add In the Future
+1. Online 2-player versus mode using sockets.
+2. Sound effects for each player.
+3. Delay the computer's move timing to make it more visible that the computer is taking a separate move.
