@@ -5,11 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Connect Four</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   </head>
   <body>
-    <h1>Welcome to Connect Four!</h1>
-    <div id="gameBoard">
+    <h1>Welcome to Con<span class='blue'>nect</span><span class='red'>Four</span>!</h1>
+    <div id='gameBoard'></div>
+    <p>
+      Connect four in a row, diagonally, horizontally, or vertically.  The computer will play a turn right after you.  Just click the column you want to drop a piece into to start the game!  Thanks for playing!
+    </p>
+    <div>
+      <h4>Player</h4>
+      <div class='gameSquare redBack'></div>
     </div>
-    <script src="./js/gamelogic.js"></script>
+    <div>
+      <h4>Computer</h4>
+      <div class='gameSquare blueBack'></div>
+    </div>
+    <script src='./js/gamelogic.js'></script>
   </body>
 </html>

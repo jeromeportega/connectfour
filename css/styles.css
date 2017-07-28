@@ -1,6 +1,29 @@
 * {
   box-sizing: border-box;
   text-align: center;
+  font-family: Railway, sans-serif;
+}
+
+.red {
+  color: #FF5722;
+}
+
+.blue {
+  color: #3F51B5;
+}
+
+.blueBack {
+  background-color: #3F51B5;
+}
+
+.redBack {
+  background-color: #FF5722;
+}
+
+#restart {
+  height: 100px;
+  width: 200px;
+  font-size: 40px;
 }
 
 #gameboard {
@@ -14,17 +37,37 @@
   display: inline-block;
   width: 50px;
   height: 302px;
-  background-color: white;
   border: solid 1px black;
-  position: relative;
+  transform: rotate(180deg);
 }
 
 .gameSquare {
-  bottom: auto;
-  display: block;
   height: 50px;
-  width: auto;
-  background-color: black;
+  width: 48px;
+  margin: auto;
+  bottom: 0;
   pointer-events: none;
   border-radius: 50px;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
 }
